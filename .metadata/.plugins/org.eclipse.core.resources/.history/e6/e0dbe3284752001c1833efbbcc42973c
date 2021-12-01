@@ -1,0 +1,7 @@
+package super_Constructor;
+
+public class Employee extends Person{
+	public Employee() {
+		System.out.println("Employee »ý¼ºÀÚ");
+	}
+}

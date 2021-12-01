@@ -1,0 +1,7 @@
+package default_Constructor;
+
+public class Person {
+	public Person() { //기본 생성자는 클래스 이름과 같고 리턴 타입이 없음
+		System.out.println("새 person이 생성됨");
+	}
+}

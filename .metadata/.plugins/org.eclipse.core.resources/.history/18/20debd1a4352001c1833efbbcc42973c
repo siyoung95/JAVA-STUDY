@@ -1,0 +1,12 @@
+package default_Constructor;
+
+public class App {
+
+	public static void main(String[] args) {
+		// 디폴트 생성자
+		Person p = new Person("홍길동");
+		System.out.println(p);
+		
+	}
+
+}

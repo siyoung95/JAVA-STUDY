@@ -1,0 +1,21 @@
+package super_Constructor;
+
+public class Person {
+	private String name;
+	
+	public Person() {
+		System.out.println("Person »ý¼ºÀÚ");
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String toString() {
+		return name;
+	}
+}
