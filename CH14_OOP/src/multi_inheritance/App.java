@@ -1,29 +1,28 @@
-package multi_inheritance;
+package multi_Inheritance;
 
 interface Speaker {
-	void speak(); //Ãß»ó¸Ş¼Òµå
+	void speak(); // ì¶”ìƒë©”ì†Œë“œ
 }
 
 interface Greeter {
-	void greet(); //Ãß»ó¸Ş¼Òµå
+	void greet();
 }
 
 public class App {
 
 	public static void main(String[] args) {
-		// ÀÎÅÍÆäÀÌ½º´Â ´ÙÁß ±¸ÇöÀÌ °¡´É
+		// ì¸í„°í˜ì´ìŠ¤ëŠ” ë‹¤ì¤‘ êµ¬ã…•ã…ã„´ì´ ê°€ëŠ¥
 		Person p1 = new Person();
-		p1.greet();
 		p1.speak();
-		
-		Speaker p2 = new Person(); //PersonÀÌ ±¸ÇöÇÑ ÀÎÅÍÆäÀÌ½º Speaker·Î ¼±¾ğ
+		p1.greet();
+
+		Speaker p2 = new Person(); // Personì´ êµ¬í˜„í•œ ì¸í„°í˜ì´ìŠ¤ Speakerë¡œ ì„ ì–¸
 		p2.speak();
-//		p2.greet(); Speaker ÀÎÅÍÆäÀÌ½ºÀÇ Ãß»ó¸Ş¼Òµå¸¸ »ç¿ë°¡´É
-		
-		
-		Greeter p3 = new Person(); 
+		// p2.greet(); Speaker ì¸í„°í˜ì´ìŠ¤ì˜ ì¶”ìƒë©”ì†Œë“œë§Œ ì‚¬ìš©ê°€ëŠ¥
+
+		Greeter p3 = new Person(); // Personì´ êµ¬í˜„í•œ ì¸í„°í˜ì´ìŠ¤ Greeterë¡œ ì„ ì–¸
 		p3.greet();
-//		p3.speak(); Greeter ÀÎÅÍÆäÀÌ½ºÀÇ Ãß»ó¸Ş¼Òµå¸¸ »ç¿ë°¡´É
+		// p3.speak(); Greeter ì¸í„°í˜ì´ìŠ¤ì˜ ì¶”ìƒë©”ì†Œë“œë§Œ ì‚¬ìš©ê°€ëŠ¥
 	}
 
 }

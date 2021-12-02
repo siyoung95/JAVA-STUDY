@@ -1,16 +1,13 @@
-package timer_example;
+package timer_Example;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-class Task extends TimerTask {
-
-	@Override
-	public void run() {
-		System.out.println("Çï·Î¿ì");
-		
-	}
+class Task extends TimerTask{
 	
+	public void run() {
+		System.out.println("í—¬ë¡œìš°");
+	}
 }
 
 public class App {
@@ -18,8 +15,7 @@ public class App {
 	public static void main(String[] args) {
 
 		Timer timer = new Timer();
-		timer.scheduleAtFixedRate(new Task(), 0, 1000); // task, delay, period / ¾î¶²±â´É, ?, ¸îÃÊ¸¶´Ù
-
+		timer.scheduleAtFixedRate(new Task(), 0, 1000); // 1000 : 1ì´ˆì— í•œë²ˆì”© ë°˜ë³µ, Lì„ ì…ë ¥í•˜ì§€ ì•Šì•„ë„ ìë™ ë³€í™˜
 		
 	}
 

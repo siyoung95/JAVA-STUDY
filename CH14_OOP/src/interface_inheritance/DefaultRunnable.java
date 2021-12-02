@@ -1,8 +1,8 @@
-package interface_inheritance;
+package interface_Inheritance;
 
-//ÀÎÅÍÆäÀÌ½º³¢¸® »ó¼Ó°¡´É
-public interface DefaultRunnable extends Runnable { //»ç¿ëÀÚÁ¤ÀÇ ÀÎÅÍÆäÀÌ½º DefaultRunnable Å¬·¡½º´Â Runnable ³»Àå ÀÎÅÍÆäÀÌ½º¸¦ »ó¼Ó¹ŞÀ½
-	default void displayDetails() { //µğÆúÆ® ¸Ş¼Òµå´Â ±¸Çö°¡´É
-		System.out.println("Ç¥½ÃÇÒ µğÅ×ÀÏ ¾øÀ½");//¸Ş¼­µå ¼±¾ğ?
-	}
+// ì¸í„°í˜ì´ìŠ¤ë¼ë¦¬ ìƒì†ê°€ëŠ¥
+public interface DefaultRunnable extends Runnable {
+	default void displayDetails() {
+		System.out.println("í‘œì‹œí•  ë””í…Œì¼ ì—†ìŒ");
+	}; // ë””í´íŠ¸ ë©”ì†Œë“œëŠ” êµ¬í˜„ê°€ëŠ¥
 }

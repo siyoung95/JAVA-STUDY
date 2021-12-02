@@ -3,13 +3,14 @@ package interfaces;
 public class App {
 
 	public static void main(String[] args) {
-		// ÀÎÅÍÆäÀÌ½º
-		// Describable ds = new Describable(); °´Ã¼¸¦ ¸¸µé ¼ö ¾ø´Ù.
-		Describable[] objs = { new Person(), new Computer() }; // objs °´Ã¼¹è¿­¿¡ Person(), Computer() ¸Ş¼­µå ³ÖÀ½
-		
-		for(Describable ob : objs) { //?
-			System.out.println(ob.getDescription()); //?
+		// ì¸í„°í˜ì´ìŠ¤
+		// Describable ds = new Describable();
+		Describable[] objs = { new Person(), new Computer() };
+
+		for (Describable ob : objs) {
+			System.out.println(ob.getDescription());
 		}
+
 	}
 
 }

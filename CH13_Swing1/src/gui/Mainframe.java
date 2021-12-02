@@ -1,22 +1,25 @@
 package gui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 
 import javax.swing.JFrame;
 
-public class Mainframe extends JFrame{
+public class MainFrame extends JFrame {
+	private static final long serialVersionUID = 1L;
 
-	public MainFrame(String title) {
-		super(title); //Ã¢ÀÇ ÀÌ¸§À» ³Ö¾î¼­ »ı¼º
-		//ÆĞ³Î ³Ö±â
-		//¸ÕÀú ·¹ÀÌ¾Æ¿ô ¼±Á¤
-		setLayout(new BorderLayout()); //Ã¢¿¡ ÄÄÆ÷³ÍÆ®¸¦ ºÙÀÌ±â À§ÇÑ ·¹ÀÌ¾Æ¿ô
+	public MainFrame(String title) { // ìƒì„±ì
+		super(title); // ì°½ì˜ ì´ë¦„ì„ ë„£ì–´ì„œ ìƒì„±
 		
-		JPanel panel = new JPanel();
-		panel.setBackgound(Color.GREEN);
+		// ë¨¼ì € ë ˆì´ì•„ì›ƒ ì„¤ì •
+		setLayout(new BorderLayout()); // ì°½ì— ì»´í¬ë„ŒíŠ¸ë¥¼ ë¶™ì´ê¸° ìœ„í•œ ë ˆì´ì•„ì›ƒ ì„¤ì •
 		
-		setSize(600,400);
+//		JPanel panel = new JPanel(); // íŒ¨ë„ì„ ìƒì„±
+//		panel.setBackground(Color.GREEN); // íŒ¨ë„ì˜ ë…¹ìƒ‰ ì„¤ì •
+		
+		add(new MainPanel(), BorderLayout.CENTER); // ìœ„ì—ì„œ ë§Œë“  íŒ¨ë„ì„ ë ˆì´ì•„ì›ƒì˜ ê°€ìš´ë° ë¶™ì´ê¸°
+		add(new Toolbar(), BorderLayout.NORTH);
+		
+		setSize(600, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}

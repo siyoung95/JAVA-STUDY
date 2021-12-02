@@ -3,16 +3,15 @@ package abstract_Class;
 public class App {
 
 	public static void main(String[] args) {
-		// OOP = °´Ã¼ÁöÇâÀûÀÎ ÇÁ·Î±×·¡¹Ö
-		// Ãß»ó Å¬·¡½º
-		//GameObject obj = new GameObject(); °´Ã¼¸¦ ¸¸µé ¼ö ¾ø´Ù. ¿Ö? Ãß»óÅ¬·¡½º·Î ÁöÁ¤ÇØ³ù±â ¶§¹®¿¡
-		GameObject[] objs = { new Player(), new Monster() }; //objs °´Ã¼¹è¿­¿¡´Â Player()¶û Monster() °´Ã¼°¡ µé¾îÀÖ´Ù.
-		
-		for(GameObject ob : objs) { // ? 
-			System.out.println(ob); // ? 
-			ob.describe(); //±¸ÇöµÈ Ãß»ó ¸Ş¼Òµå // °úÁ¤ : ºÎ¸ğÅ¬·¡½ºÀÎ GameObject¿¡ Ãß»ó¸Ş¼­µå¸¦ ¼±¾ğÇÏ°í, ÀÚ½ÄÅ¬·¡½º¿¡¼­ Ãß»ó¸Ş¼­µå¸¦ overrideÇØ¾ß¸¸ ¸ŞÀÎÅ¬·¡½º¿¡¼­ »ç¿ë°¡´É
+		// ì¶”ìƒ í´ë˜ìŠ¤
+		// GameObject obs = new GameObject(); // ê°ì²´ë¥¼ ë§Œë“¤ ìˆ˜ ì—†ë‹¤.
+
+		GameObject[] objs = { new Player(), new Monster() };
+
+		for (GameObject ob : objs) {
+			System.out.println(ob);
+			ob.describe(); // êµ¬í˜„ëœ ì¶”ìƒ ë©”ì†Œë“œ
 		}
 
 	}
-
 }

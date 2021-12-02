@@ -1,5 +1,5 @@
 package abstract_Class;
 
-public abstract class GameObject { // Ãß»ó Å¬·¡½º´Â Å¬·¡½º¾Õ¿¡ abstract¸¦ ºÙÀÓ , Ãß»óÅ¬·¡½º = ¸®ÅÏ°ª?
-	public abstract void describe(); // Ãß»ó ¸Þ¼­µå´Â ¸Þ¼Òµå ¸öÃ¼°¡({}) ¾ø´Ù. => »ó¼Ó¹ÞÀº Å¬·¡½º¿¡¼­ ÀÛ¼ºÇÑ´Ù. // »ó¼Ó¹ÞÀº Å¬·¡½º ? ºÎ¸ðÅ¬·¡½º ¸»ÇÏ´Â °Ç°¡
+public abstract class GameObject { // ì¶”ìƒ í´ëž˜ìŠ¤ëŠ” í´ëž˜ìŠ¤ ì•žì— abstractë¥¼ ë¶™ìž„
+	public abstract void describe(); // ì¶”ìƒ ë©”ì†Œë“œëŠ” ë©”ì†Œë“œ ëª¸ì²´ê°€ ì—†ë‹¤. => ìƒì†ë°›ì€ í´ëž˜ìŠ¤ì—ì„œ ìž‘ì„±
 }

@@ -1,13 +1,13 @@
-package interface_inheritance;
+package interface_Inheritance;
 
 public class App {
 
 	public static void main(String[] args) {
-		// ÀÎÅÍÆäÀÌ½º´Â ÀÎÅÍÆäÀÌ½º¸¦ »ó¼Ó
+		// ì¸í„°í˜ì´ìŠ¤ëŠ” ì¸í„°í˜ì´ìŠ¤ë¥¼ ìƒì†
+		
 		DefaultRunnable m1 = new Machine();
 		m1.run();
 		m1.displayDetails();
-
 	}
 
 }

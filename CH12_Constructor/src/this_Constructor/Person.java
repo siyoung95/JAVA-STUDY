@@ -1,27 +1,27 @@
 package this_Constructor;
 
 public class Person {
-	
+
 	private String name;
 	private int age;
-	
+
 	public Person() {
-		// this() »ı¼ºÀÚ
-		this("ÀÍ¸í", 0); // this("ÀÍ¸í") , ³ªÀÌ¸¦ ÀÔ·Â¾ÈÇØµµ ¿Ö age=0ÀÌ Ãâ·ÂÀÌ µÉ±î?
+		// this() ìƒì„±ì
+		this("ìµëª…",0);
 	}
-	
-	public Person(String name) { //±âº» »ı¼ºÀÚ´Â Å¬·¡½º ÀÌ¸§°ú °°°í ¸®ÅÏ Å¸ÀÔÀÌ ¾øÀ½
-		this(name, 0);
+
+	public Person(String name) { // ìƒì„±ìëŠ” í´ë˜ìŠ¤ ì´ë¦„ê³¼ ê°™ê³  ë¦¬í„´ íƒ€ì…ì´ ì—†ìŒ
+		this(name,0);
 	}
-	
-	public Person(String name, int age) { //±âº» »ı¼ºÀÚ´Â Å¬·¡½º ÀÌ¸§°ú °°°í ¸®ÅÏ Å¸ÀÔÀÌ ¾øÀ½
+
+	public Person(String name, int age) { // ìƒì„±ìëŠ” í´ë˜ìŠ¤ ì´ë¦„ê³¼ ê°™ê³  ë¦¬í„´ íƒ€ì…ì´ ì—†ìŒ
 		this.name = name;
 		this.age = age;
 	}
-	
 
 	@Override
-	public String toString() {
+	public String toString() { // ê°ì²´ì˜ ì •ë³´ë¥¼ ì¶œë ¥
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
+
 }
